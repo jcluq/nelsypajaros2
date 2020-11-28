@@ -14,7 +14,7 @@ function preload(){
   s[2] = loadSound("sonidos/3Copeton.wav")
   s[3] = loadSound("sonidos/2Tangara.wav")
   s[4] = loadSound("sonidos/5Cardenal.wav")
-  s[5] = loadSound("sonidos/2Tangara.wav")
+  s[5] = loadSound("sonidos/6Yataro.wav")
   s[6] = loadSound("sonidos/7Strunella.wav")
   s[7] = loadSound("sonidos/2Tangara.wav")
 
