@@ -9,14 +9,14 @@ let ic = []
 function preload(){
   mapa = loadImage("imagenes/mapa.jpg")
   
-  s[0] = loadSound("sonidos/2Tangara.wav")
+  s[0] = loadSound("sonidos/1Paisaje.wav")
   s[1] = loadSound("sonidos/2Tangara.wav")
   s[2] = loadSound("sonidos/3Copeton.wav")
-  s[3] = loadSound("sonidos/2Tangara.wav")
+  s[3] = loadSound("sonidos/4Vaca.wav")
   s[4] = loadSound("sonidos/5Cardenal.wav")
   s[5] = loadSound("sonidos/6Yataro.wav")
   s[6] = loadSound("sonidos/7Strunella.wav")
-  s[7] = loadSound("sonidos/2Tangara.wav")
+  s[7] = loadSound("sonidos/8Quenquen.wav")
 
   
 }
