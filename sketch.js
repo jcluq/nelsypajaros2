@@ -35,12 +35,12 @@ function setup() {
   
   
   botones[0] = new Boton(width * 0.0360,height*0.174,s[0],"","Paisaje Sonoro",""); //Paisaje Sonoro
-  botones[1] = new Boton(width * 0.1925,height*0.216,s[1],"imagenes/mTangara.png","Tangata","Tangara vassorii"); //Tangata 
-  botones[2] = new Boton(width * 0.6231,height*0.194,s[2],"imagenes/mCompeton.png","Copeton", "Zonitrichia capensis");//Copeton
+  botones[1] = new Boton(width * 0.1925,height*0.216,s[1],"imagenes/mTangara.png","Tangara","Tangara vassorii"); //Tangata 
+  botones[2] = new Boton(width * 0.6231,height*0.194,s[2],"imagenes/mCompeton.png","Copetón", "Zonotrichia capensis");//Copeton
   botones[3] = new Boton(width * 0.3535,height*0.665,s[3],"","Vaca",""); //Vaca
-  botones[4] = new Boton(width * 0.4838,height*0.564,s[4],"imagenes/mCardenal.png","Cardinal","Piranga rubra"); //Cardinal
+  botones[4] = new Boton(width * 0.4838,height*0.564,s[4],"imagenes/mCardenal.png","Cardenal","Piranga rubra"); //Cardinal
   botones[5] = new Boton(width * 0.5250,height*0.721,s[5],"imagenes/mYataro.png","Yataro","Aulacorhynchus albivitta"); //Yataro
-  botones[6] = new Boton(width * 0.6395,height*0.514,s[6],"imagenes/mStrunella.png","Sturnella","Sturnella magna"); //Sturnella
+  botones[6] = new Boton(width * 0.6395,height*0.514,s[6],"imagenes/mStrunella.png","Chirlobirlo","Sturnella magna"); //Sturnella
   botones[7] = new Boton(width * 0.9432,height*0.3275,s[7],"imagenes/mQuenquen.png","Quenquen","Cyanocorax yncas"); //Quenquen
   botones[8] = new Boton(width * 0.6410,height*0.0428,s[8],"imagenes/Don.png","Don Mayorga","");
 
