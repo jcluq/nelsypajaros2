@@ -1,3 +1,5 @@
+
+
 let escala = .4
 let botones = []
 let ancho
@@ -31,15 +33,15 @@ function setup() {
   image(mapa,0,0,width, height)
   
   
-  botones[0] = new Boton(width * 0.0360,height*0.174,s[0],"","Paisaje Sonoro"); //Paisaje Sonoro
-  botones[1] = new Boton(width * 0.1925,height*0.216,s[1],"imagenes/mTangara.png","Tangara Vassorii"); //Tangata 
-  botones[2] = new Boton(width * 0.6231,height*0.194,s[2],"imagenes/mCompeton.png", "Zonitrichia Capensis");//Copeton
-  botones[3] = new Boton(width * 0.3535,height*0.665,s[3],"","Vaca"); //Vaca
-  botones[4] = new Boton(width * 0.4838,height*0.564,s[4],"imagenes/mCardenal.png","Piranga Rubra"); //Cardinal
-  botones[5] = new Boton(width * 0.5250,height*0.721,s[5],"imagenes/mYataro.png"," Aulacorhynchus Albivitta"); //Yataro
-  botones[6] = new Boton(width * 0.6395,height*0.514,s[6],"imagenes/mStrunella.png","Sturnella Magna"); //Sturnella
-  botones[7] = new Boton(width * 0.9432,height*0.3275,s[7],"imagenes/mQuenquen.png","Cyanocorax Yncas"); //Quenquen
-  botones[8] = new Boton(width * 0.6410,height*0.0428,s[8],"imagenes/Don.png","Don Mayorga");
+  botones[0] = new Boton(width * 0.0360,height*0.174,s[0],"","Paisaje Sonoro",""); //Paisaje Sonoro
+  botones[1] = new Boton(width * 0.1925,height*0.216,s[1],"imagenes/mTangara.png","Tangata","Tangara vassorii"); //Tangata 
+  botones[2] = new Boton(width * 0.6231,height*0.194,s[2],"imagenes/mCompeton.png","Copeton", "Zonitrichia capensis");//Copeton
+  botones[3] = new Boton(width * 0.3535,height*0.665,s[3],"","Vaca",""); //Vaca
+  botones[4] = new Boton(width * 0.4838,height*0.564,s[4],"imagenes/mCardenal.png","Cardinal","Piranga rubra"); //Cardinal
+  botones[5] = new Boton(width * 0.5250,height*0.721,s[5],"imagenes/mYataro.png","Yataro","Aulacorhynchus albivitta"); //Yataro
+  botones[6] = new Boton(width * 0.6395,height*0.514,s[6],"imagenes/mStrunella.png","Sturnella","Sturnella magna"); //Sturnella
+  botones[7] = new Boton(width * 0.9432,height*0.3275,s[7],"imagenes/mQuenquen.png","Quenquen","Cyanocorax yncas"); //Quenquen
+  botones[8] = new Boton(width * 0.6410,height*0.0428,s[8],"imagenes/Don.png","Don Mayorga","");
 
  
 }
@@ -75,13 +77,14 @@ function mouseClicked(){
 }
 
 class Boton{
-  constructor(x,y,s,ic,nom){
+  constructor(x,y,s,ic,nom,cie){
   this.x = x;
   this.y = y;
   this.d = 62*escala;
   this.sonido = s
   this.ic = ic
   this.nom = nom
+  this.cie = cie
   }
   
   pintar(){
@@ -111,15 +114,42 @@ class Boton{
 
   dispNombre(){
     textSize(18)
-    let ancua = textWidth(this.nom)
+    let ancua = textWidth(this.nom);
     let altcua = textAscent() + textDescent();
-    fill(255,200)
-    noStroke()
-    rect(mouseX+5-ancua/2,mouseY-5-altcua,ancua+10, altcua)
+    textSize(12)
+    let anci = textWidth(this.cie);
+    let altci = textAscent() + textDescent();
+    let altot = altci+altcua
     
-    fill(0)
-    text(this.nom,mouseX+10-ancua/2,mouseY-10)
+  
+    
+    
+    if(this.cie!=""){
+      textStyle(NORMAL)
+      textSize(18);
+      fill(255,150);
+      noStroke()
+      rect(mouseX+8-ancua/2,mouseY-5-altot,anci+10, altot)
+      fill(0)
+      text(this.nom,mouseX+10-ancua/2,mouseY-10-altci)
+      textSize(12)
+      textStyle(ITALIC)
+      text(this.cie,mouseX+10-ancua/2,mouseY-10)
+      print("sis")
+    }else{
 
+      textStyle(NORMAL)
+      textSize(18);
+      fill(255,150);
+      noStroke()
+      rect(mouseX+6-ancua/2,mouseY-5-altcua,ancua+10, altcua)
+      fill(0)
+      text(this.nom,mouseX+10-ancua/2,mouseY-10)
+      }
+
+   
+    
+    
 
   }
   
