@@ -1,6 +1,6 @@
 
 
-let escala = .4
+let escala = .4 //esta es la escala del mapa, este valor define el tamaño total del mapa
 let botones = []
 let ancho
 let alto
@@ -29,7 +29,8 @@ function setup() {
   ancho = mapa.width*escala
   alto = mapa.height*escala
   
-  createCanvas(mapa.width*escala, mapa.height*escala);
+  let cnv = createCanvas(mapa.width*escala, mapa.height*escala);
+  cnv.parent("mapa")
   image(mapa,0,0,width, height)
   
   
