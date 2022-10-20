@@ -69,14 +69,14 @@ function setup() {
   botones[0] = new Boton(width * 0.84,height*0.3,s[0],  imgs[0],"Aguantapepo","Notharchus pectoralis");
   botones[1] = new Boton(width * 0.35 ,height*0.3,s[1],imgs[1],"Azulejo","Thraupis episcopus"); 
   botones[2] = new Boton(width * 0.7,height*0.05,s[2],imgs[2],"Canchana", "Campephilus gayaquilensis");
-  botones[3] = new Boton(width * 0.48,height*0.06,s[3],imgs[3],"Charra","Sporophila corvina hembra");
-  botones[4] = new Boton(width * 0.8,height*0.7,s[4],imgs[4],"Chasquero","Megaceryle torquata hembra"); 
+  botones[3] = new Boton(width * 0.48,height*0.06,s[3],imgs[3],"Charra","Sporophila corvina");
+  botones[4] = new Boton(width * 0.8,height*0.7,s[4],imgs[4],"Chasquero","Megaceryle torquata"); 
   botones[5] = new Boton(width * 0.18,height*0.48,s[5],imgs[5],"Chirlo","Actitis macularius");
   botones[6] = new Boton(width * 0.82,height*0.48,s[6],imgs[6],"Cucarachero","Troglodytes aedon"); 
   botones[7] = new Boton(width * 0.22,height*0.13,s[7],imgs[7],"Gallina de monte","Tinamus major");
   botones[8] = new Boton(width * 0.77,height*0.05,s[8],imgs[8],"Gavilán pollero","Rupornis magnirostris");
   botones[9] = new Boton(width * 0.87,height*0.0428,s[9],imgs[9],"Juru","Baryphthengus martii");
-  botones[10] = new Boton(width * 0.30,height*0.40,s[10],imgs[10],"Kinde guagua","Amazilia rosenbergi hembra"); 
+  botones[10] = new Boton(width * 0.30,height*0.40,s[10],imgs[10],"Kinde guagua","Amazilia rosenbergi"); 
   botones[11] = new Boton(width * 0.03,height*0.27,s[11],imgs[11],"Paletón","Ramphastos brevis"); 
   botones[12] = new Boton(width * 0.15,height*0.20,s[12],imgs[12],"Paloma","Patagioenas speciosa"); 
   botones[13] = new Boton(width * 0.27,height*0.13,s[13],imgs[13],"Perdíz","Crypturellus soui"); 
@@ -85,8 +85,8 @@ function setup() {
   botones[16] = new Boton(width * 0.47,height*0.28,s[16],imgs[16],"Suguyo","Nyctidromus albicollis"); 
   botones[17] = new Boton(width * 0.84,height*0.1 ,s[17],imgs[17],"Wingalvo","Manacus manacus"); 
   botones[18] = new Boton(width * 0.82,height*0.4,s[18],imgs[18],"Carpinero","Campephilus gayaquilensis"); 
-  botones[19] = new Boton(width * 0.60,height*0.60,s[10],imgs[10],"Kinde guagua","Amazilia rosenbergi hembra"); 
-  botones[20] = new Boton(width * 0.46,height*0.68,s[10],imgs[10],"Kinde guagua","Amazilia rosenbergi hembra"); 
+  botones[19] = new Boton(width * 0.60,height*0.60,s[10],imgs[10],"Kinde guagua","Amazilia rosenberg"); 
+  botones[20] = new Boton(width * 0.46,height*0.68,s[10],imgs[10],"Kinde guagua","Amazilia rosenbergi"); 
   
  
 }
