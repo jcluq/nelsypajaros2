@@ -68,7 +68,7 @@ function setup() {
   
   botones[0] = new Boton(width * 0.84,height*0.3,s[0],  imgs[0],"Aguantapepo","Notharchus pectoralis");
   botones[1] = new Boton(width * 0.35 ,height*0.3,s[1],imgs[1],"Azulejo","Thraupis episcopus"); 
-  botones[2] = new Boton(width * 0.7,height*0.05,s[2],imgs[2],"Canchana", "Campephilus gayaquilensis");
+  botones[2] = new Boton(width * 0.7,height*0.05,s[2],imgs[2],"Canchana", "Pionus menstruus");
   botones[3] = new Boton(width * 0.48,height*0.06,s[3],imgs[3],"Charra","Sporophila corvina");
   botones[4] = new Boton(width * 0.8,height*0.7,s[4],imgs[4],"Chasquero","Megaceryle torquata"); 
   botones[5] = new Boton(width * 0.18,height*0.48,s[5],imgs[5],"Chirlo","Actitis macularius");
